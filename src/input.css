@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/*Background Root Color */
+/*Background Root Color 1*/
 :root {
     --bg-black-50: #E6F2FF;
     --bg-black-100: #CCE5FF;
@@ -15,7 +15,7 @@
     --bg-black-950: #00131F;
 }
 
-/*Text Root Color*/
+/*Text Root Color 1*/
 :root {
     --text-black-50: #E6F2FF;
     --text-black-100: #CCE5FF;
