@@ -1,1 +1,28 @@
 @import "tailwindcss";
+:root {
+    --bg-black-50: #E6F2FF;
+    --bg-black-100: #CCE5FF;
+    --bg-black-200: #91CDFF;
+    --bg-black-300: #20B5FF;
+    --bg-black-400: #009ADB;
+    --bg-black-500: #007FB5;
+    --bg-black-600: #006590;
+    --bg-black-700: #004C6D;
+    --bg-black-800: #00344C;
+    --bg-black-900: #001E2E;
+    --bg-black-950: #00131F;
+}
+
+:root {
+    --bg-black-50: #E6F2FF;
+    --bg-black-100: #CCE5FF;
+    --bg-black-200: #91CDFF;
+    --bg-black-300: #20B5FF;
+    --bg-black-400: #009ADB;
+    --bg-black-500: #007FB5;
+    --bg-black-600: #006590;
+    --bg-black-700: #004C6D;
+    --bg-black-800: #00344C;
+    --bg-black-900: #001E2E;
+    --bg-black-950: #00131F;
+}
