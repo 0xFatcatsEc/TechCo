@@ -193,17 +193,17 @@
   --bg-black-950: #00131F;
 }
 :root {
-  --bg-black-50: #E6F2FF;
-  --bg-black-100: #CCE5FF;
-  --bg-black-200: #91CDFF;
-  --bg-black-300: #20B5FF;
-  --bg-black-400: #009ADB;
-  --bg-black-500: #007FB5;
-  --bg-black-600: #006590;
-  --bg-black-700: #004C6D;
-  --bg-black-800: #00344C;
-  --bg-black-900: #001E2E;
-  --bg-black-950: #00131F;
+  --text-black-50: #E6F2FF;
+  --text-black-100: #CCE5FF;
+  --text-black-200: #91CDFF;
+  --text-black-300: #20B5FF;
+  --text-black-400: #009ADB;
+  --text-black-500: #007FB5;
+  --text-black-600: #006590;
+  --text-black-700: #004C6D;
+  --text-black-800: #00344C;
+  --text-black-900: #001E2E;
+  --text-black-950: #00131F;
 }
 @property --tw-font-weight {
   syntax: "*";
