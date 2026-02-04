@@ -1,0 +1,3 @@
+# THIS IS FOLDER FOR ASSETS
+* Images
+* Logo
