@@ -1,13 +1,1 @@
 /* Main css is ready */
-
-body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to top, #4b0082, #000000, #191970);
-    font-family: sans-serif;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
