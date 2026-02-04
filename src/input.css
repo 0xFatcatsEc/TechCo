@@ -29,3 +29,34 @@
     --text-black-900: #001E2E;
     --text-black-950: #00131F;
 }
+
+/* Background Root Color 2 */
+:root {
+    --bg-black-50: #ecfeff;
+    --bg-black-100: #cffafe;
+    --bg-black-200: #a5f3fc;
+    --bg-black-300: #67e8f9;
+    --bg-black-400: #22d3ee;
+    --bg-black-500: #06b6d4;
+    --bg-black-600: #0891b2;
+    --bg-black-700: #0e7490;
+    --bg-black-800: #155e75;
+    --bg-black-900: #164e63;
+    --bg-black-950: #083344;
+}
+
+
+/* Text Root Color 2 */
+:root {
+    --text-black-50: #ecfeff;
+    --text-black-100: #cffafe;
+    --text-black-200: #a5f3fc;
+    --text-black-300: #67e8f9;
+    --text-black-400: #22d3ee;
+    --text-black-500: #06b6d4;
+    --text-black-600: #0891b2;
+    --text-black-700: #0e7490;
+    --text-black-800: #155e75;
+    --text-black-900: #164e63;
+    --text-black-950: #083344;
+}
