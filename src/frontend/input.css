@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --background-image-tech-hero: radial-gradient(circle at 25% 50%, rgba(0, 209, 224, 0.08) 0%, transparent 50%), 
-                                radial-gradient(circle at center, #0b161d 0%, #020609 100%);
+  /* 1. Changed position from 25% to 32% to move it away from the edge.
+     2. Changed spread from 45% to 25% to make the glow 'smaller' and sharper.
+     3. Kept opacity at 0.3 for that vibrant neon look.
+  */
+  --background-image-tech-hero: 
+    radial-gradient(circle at 32% 45%, rgba(0, 209, 224, 0.2) 0%, transparent 25%), 
+    radial-gradient(circle at center, #0b161d 0%, #020609 100%);
 }
 
 /*Background Root Color 1*/
