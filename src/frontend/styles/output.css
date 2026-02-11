@@ -208,9 +208,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-\[1400px\] {
-    max-width: 1400px;
-  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -273,14 +270,8 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
   .px-5\! {
     padding-inline: calc(var(--spacing) * 5) !important;
-  }
-  .py-2\.5 {
-    padding-block: calc(var(--spacing) * 2.5);
   }
   .py-2\.5\! {
     padding-block: calc(var(--spacing) * 2.5) !important;
