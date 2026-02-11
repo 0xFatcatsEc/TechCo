@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --bg-black-50: #ecfeff;
+    --bg-black-100: #cffafe;
+    --bg-black-200: #a5f3fc;
+    --bg-black-300: #67e8f9;
+    --bg-black-400: #22d3ee;
+    --bg-black-500: #06b6d4;
+    --bg-black-600: #0891b2;
+    --bg-black-700: #0e7490;
+    --bg-black-800: #155e75;
+    --bg-black-900: #164e63;
+    --bg-black-950: #083344;
+}
+
+/*Icon Color*/
+:root {
+    /* Colors based on your 2nd and 4th screenshots */
+    --icon-bg-color: #0d2127;    /* Deep dark teal */
+    --icon-glow-color: #22d3ee;  /* Bright cyan */
+    --glass-card-bg: rgba(10, 15, 20, 0.4); 
+}
+
+body.bg-tech-hero {
+    background-color: #020617; 
+    
+    /* Ensures the background covers the full screen height */
+    min-height: 100vh;
+    margin: 0;
+    
+    /* Sets the default text color to white for readability */
+    color: #ffffff;
+    
+    /* If you want that smooth font rendering from your images */
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -10,7 +46,7 @@
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  top: 70%;
+  top: calc(100% + 15px);
   left: 0;
   background-color: var(--color-slate-800);
   font-family: 'Poppins', sans-serif;
@@ -21,14 +57,18 @@
   padding: 10px;
   border-radius: 7px;
   border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 1.0s ease;
 }
 
 /* Show dropdown when hovering the main button OR the dropdown itself */
 .dropdown:hover .dropdown-content,
-.dropdown-content:hover {
+.dropdown-content:hover, .dropdown-content::before {
   visibility: visible;
   opacity: 1;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
 }
 
 /* List items */
@@ -49,7 +89,7 @@
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  left: 100%;
+  left: calc(100% + 15px);
   top: 0;
   background-color: #1e293b;
   min-width: 200px;
@@ -58,7 +98,7 @@
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   border-radius: 5px;
   padding: 10px;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 1.0s ease;
 }
 
 /* Show submenu when hovering its parent item or the submenu itself */
@@ -96,5 +136,301 @@
 .sub-menu li .nav-button:hover {
   background-color: transparent;
   color: #000;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 1.0s ease;
+}
+
+.main-navbar {
+/* THE HEIGHT - Change 120px to match your 2nd photo exactly */
+    height: 90px; 
+    
+    /* WIDTH & ALIGNMENT */
+    width: 100%;
+    display: flex;
+    align-items: center; /* This keeps your logo and links in the middle */
+    
+    /* STYLING FROM YOUR THEME */
+    background-color: rgba(18, 22, 28, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    
+    /* POSITIONING */
+    position: relative;
+}
+
+/* This forces the menu to the exact center of the nav bar */
+.nav-menu-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Allows clicks to pass through container */
+}
+
+.nav-menu-center > div {
+    pointer-events: auto; /* Re-enables clicks for the actual links */
+}
+
+.nav-content-wrapper {
+    width: 100%;
+    max-width: 1600px; 
+    margin: 0 auto;
+    padding: 0 50px; /* THIS ADDS THE SPACE ON LEFT AND RIGHT */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Space between logo and text */
+    margin-right: auto;
+}
+
+.logo-box {
+    background-color: #00d1ff;
+    width: 52px;             /* Match the larger size in Photo 2 */
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-letter {
+    color: #000;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.web-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    Letter-Spacing: -0.5px
+}
+
+.nav-icons-group {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Extra space between search, user, and cart */
+    /* This ensures it stays anchored right */
+    margin-left: auto;
+}
+
+.icon-btn svg{
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-btn:hover { color: #fff; }
+
+.cart-pill-box {
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.lg\:flex {
+   margin-left: auto;
+}
+
+/* Layout Wrapper */
+.hero-content {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 80vh;
+}
+
+/* Left Content Styling */
+.hero-text { flex: 1; }
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 100px;
+    color: #22d3ee;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.highlight { color: #22d3ee; }
+
+.hero-description {
+    color: #9ca3af;
+    font-size: 1.125rem;
+    max-width: 480px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hero-btns { display: flex; gap: 16px; margin-bottom: 60px; }
+
+.btn-primary {
+    background: #22d3ee;
+    color: black;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #374151;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-stats {
+  display: flex; gap: 48px;
+}
+.stat-num { 
+  display: block; font-size: 1.875rem; font-weight: bold; color: white; 
+}
+.stat-label {
+  color: #6b7280; font-size: 0.75rem; text-transform: uppercase; 
+}
+
+/* Visual Container Styling */
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Keeps it on the right */
+    align-items: center;
+    padding-right: 20px;
+}
+
+.glass-card {
+    position: relative;
+    /* Adjust width to be slightly narrower and height to be taller */
+    width: 580px;
+   height: 650px; /* Increased height for the taller look in image 2 */
+    aspect-ratio: 0.9 / 1; /* This creates the taller portrait look from image 2 */
+    
+    /* Background and Glass Effect */
+    background: rgba(10, 34, 40, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    
+    /* Border and Corners */
+    border-radius: 20px; /* Increased for the smoother, rounder look in image 2 */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.pc-image {
+    width: 480px; /* Scale the image to fit nicely in the new taller frame */
+    height: auto;
+    object-fit: contain;
+    animation: float 6s ease-in-out infinite;
+}
+
+
+.badge-top { 
+  top: 60px;
+  right: -25px;
+  z-index: 10;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.badge-bottom { 
+  bottom: 80px;
+  left: -25px;
+  z-index: 10;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-box {
+    width: 42px;
+    height: 42px;
+    background-color: var(--icon-bg-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevents the box from squishing */
+}
+
+.material-symbols-rounded {
+    font-family: 'Material Symbols Rounded';
+    color: var(--icon-glow-color);
+    font-size: 24px;
+    /* This creates the neon glow effect */
+    filter: drop-shadow(0 0 5px var(--icon-glow-color));
+    user-select: none;
+}
+
+.badge-title { display: block; color: white; font-weight: bold; font-size: 12px; }
+.badge-sub { color: #9ca3af; font-size: 10px; }
+
+.glow-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(34,211,238,0.15) 0%, transparent 70%);
+    filter: blur(40px);
+    z-index: -1;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .hero-container { flex-direction: column; text-align: center; padding-top: 40px; }
+    .hero-text { display: flex; flex-direction: column; align-items: center; }
+    .hero-visual { justify-content: center; width: 100%; }
+    .hero-title { font-size: 3rem; }
 }
