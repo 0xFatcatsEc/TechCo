@@ -14,6 +14,37 @@
     --bg-black-950: #083344;
 }
 
+/*Text Root Color 1*/
+:root {
+    --text-black-50: #E6F2FF;
+    --text-black-100: #CCE5FF;
+    --text-black-200: #91CDFF;
+    --text-black-300: #20B5FF;
+    --text-black-400: #009ADB;
+    --text-black-500: #007FB5;
+    --text-black-600: #006590;
+    --text-black-700: #004C6D;
+    --text-black-800: #00344C;
+    --text-black-900: #001E2E;
+    --text-black-950: #00131F;
+}
+
+
+/* Text Root Color 2 */
+:root {
+    --text-black-50: #d1d1d1c0;
+    --text-black-100: #cffafe;
+    --text-black-200: #a5f3fc;
+    --text-black-300: #67e8f9;
+    --text-black-400: #22d3ee;
+    --text-black-500: #06b6d4;
+    --text-black-600: #0891b2;
+    --text-black-700: #0e7490;
+    --text-black-800: #155e75;
+    --text-black-900: #164e63;
+    --text-black-950: #083344;
+}
+
 /*Icon Color*/
 :root {
     /* Colors based on your 2nd and 4th screenshots */
@@ -46,29 +77,34 @@ display: inline-block;
 visibility: hidden;
 opacity: 0;
 position: absolute;
-top: calc(100% + 15px);
+top: 100%;
 left: 0;
-background-color: var(--color-slate-800);
+background-color: #1e293b;
 font-family: 'Poppins', sans-serif;
-font-family: 'Inter', sans-serif;
 min-width: 230px;
 box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
-z-index: 10;
+z-index: 50;
 padding: 10px;
+padding-top: 20px;
 border-radius: 7px;
-border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
-transition: opacity 0.3s ease, visibility 1.0s ease;
+border: 1px solid rgba(255, 255, 255, 0.1);
+transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Show dropdown when hovering the main button OR the dropdown itself */
-.dropdown:hover .dropdown-content,
-.dropdown-content:hover, .dropdown-content::before {
-visibility: visible;
-opacity: 1;
+/* Invisible bridge to keep hover active between trigger and dropdown */
+.dropdown::after {
+content: '';
 position: absolute;
-top: 50px;
+top: 100%;
 left: 0;
 width: 100%;
+height: 20px;
+}
+
+/* Show dropdown when hovering */
+.dropdown:hover .dropdown-content {
+visibility: visible;
+opacity: 1;
 }
 
 /* List items */
@@ -89,16 +125,27 @@ font-style: poppins;
 visibility: hidden;
 opacity: 0;
 position: absolute;
-left: calc(100% + 15px);
+left: calc(100% + 10px);
 top: 0;
 background-color: #1e293b;
 min-width: 200px;
 font-family: 'Poppins', sans-serif;
-border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+border: 1px solid rgba(255, 255, 255, 0.1);
 box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
 border-radius: 5px;
 padding: 10px;
-transition: opacity 0.3s ease, visibility 1.0s ease;
+padding-left: 20px;
+transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Invisible bridge for submenu */
+.dropdown-content li::after {
+content: '';
+position: absolute;
+right: -15px;
+top: 0;
+width: 20px;
+height: 100%;
 }
 
 /* Show submenu when hovering its parent item or the submenu itself */
@@ -248,17 +295,20 @@ margin-left: auto;
 .hero-content {
     display: flex;
     width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 60px;
     align-items: center;
     justify-content: space-between;
-    gap: 70px;
+    gap: 40px;
     min-height: 80vh;
 }
 
 /* Left Content Styling */
-.hero-text { 
-    padding-left: 150px;
+#hero-text { 
+    flex: 1;
+    padding-left: 250px;
+    min-width: 0;
 }
 
 .badge {
@@ -367,39 +417,26 @@ color: #6b7280; font-size: 0.75rem; text-transform: uppercase;
 /* Visual Container Styling */
 .hero-visual {
     display: flex;
-    position: relative;
-    right: 140px;
-    justify-content: flex-end; /* Keeps it on the right */
-    padding-right: 0;
+    flex: 1;
+    justify-content: center;
+    min-width: 0;
+    padding-right: 200px;
 }
 
 .glass-card {
     position: relative;
-    /* Adjust width to be slightly narrower and height to be taller */
-    width: 730px;
-    height: 660px; /* Increased height for the taller look in image 2 */
-    
-    /* Background and Glass Effect */
+    width: 700px;
+    height: 580px;
     background: rgba(10, 34, 40, 0.8);
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    
-    /* Border and Corners */
-    border-radius: 30px; /* Increased for the smoother, rounder look in image 2 */
-    
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px;
+    z-index: -1 !important;
 }
-
-.pc-image {
-    width: 1000px;
-    height: 850px; /* Adjust height to fit inside your 660px glass-card */
-    outline: none; /* Removes the border when clicking the 3D model */
-    object-fit: contain;
-}
-
 
 .badge-top { 
 top: 40px;
@@ -475,4 +512,20 @@ gap: 12px;
     .hero-text { display: flex; flex-direction: column; align-items: center; }
     .hero-visual { justify-content: center; width: 100%; }
     .hero-title { font-size: 3rem; }
+}
+
+/* TOP PICS SECTION*/
+
+.badge-top-pick {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 100px;
+    color: #22d3ee;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
 }
