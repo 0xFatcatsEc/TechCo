@@ -5,7 +5,7 @@
      2. Changed spread from 45% to 25% to make the glow 'smaller' and sharper.
      3. Kept opacity at 0.3 for that vibrant neon look.
   */
-  --background-image-tech-hero: 
+  --bg-tech-hero: 
     radial-gradient(circle at 40% 30%, rgba(0, 209, 224, 0.2) 0%, transparent 60%), 
     radial-gradient(circle at center, #0b161d 0%, #020609 100%);
 }
