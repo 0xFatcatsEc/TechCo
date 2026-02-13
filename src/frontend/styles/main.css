@@ -351,7 +351,7 @@ margin-left: auto;
     justify-content: flex-start;
 }
 
-.btn-primary {
+#btn-primary {
     background: var(--color-cyan-500);
     color: black;
     border-radius: 15px;
@@ -362,19 +362,18 @@ margin-left: auto;
     flex: 0 0 auto;
     min-width: 200px;
     padding: 16px 0;
-    /* 1. Add transition to the base state */
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     will-change: transform;
 }
 
-.btn-primary:hover {
+#btn-primary:hover {
     /* 2. Scale up slightly on hover */
     transform: scale(1.05);
     /* 3. Add a subtle box shadow for depth */
     box-shadow: 0 10px 25px rgba(34, 211, 238, 0.3);
 }
 
-.btn-primary:active {
+#btn-primary:active {
     transform: scale(0.98);
     box-shadow: 0 5px 10px rgba(34, 211, 238, 0.3);
 }
