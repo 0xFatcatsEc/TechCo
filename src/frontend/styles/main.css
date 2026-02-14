@@ -55,15 +55,9 @@
 
 body.bg-tech-hero {
     background-color: #020617; 
-    
-    /* Ensures the background covers the full screen height */
     min-height: 100vh;
     margin: 0;
-    
-    /* Sets the default text color to white for readability */
     color: #ffffff;
-    
-    /* If you want that smooth font rendering from your images */
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -186,26 +180,18 @@ color: #000;
 transition: opacity 0.3s ease, visibility 1.0s ease;
 }
 
-.main-navbar {
-/* THE HEIGHT - Change 120px to match your 2nd photo exactly */
+#main-navbar {
     height: 90px; 
-    
-    /* WIDTH & ALIGNMENT */
     width: 100%;
     display: flex;
-    align-items: center; /* This keeps your logo and links in the middle */
-    
-    /* STYLING FROM YOUR THEME */
+    align-items: center;
     background-color: rgba(18, 22, 28, 0.8);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); /* Safari support */
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    
-    /* POSITIONING */
-    position: relative;
+    position: sticky;
 }
 
-/* This forces the menu to the exact center of the nav bar */
 .nav-menu-center {
     position: absolute;
     left: 50%;
@@ -213,18 +199,18 @@ transition: opacity 0.3s ease, visibility 1.0s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    pointer-events: none; /* Allows clicks to pass through container */
+    pointer-events: none;
 }
 
 .nav-menu-center > div {
-    pointer-events: auto; /* Re-enables clicks for the actual links */
+    pointer-events: auto; 
 }
 
 .nav-content-wrapper {
     width: 100%;
     max-width: 1600px; 
     margin: 0 auto;
-    padding: 0 50px; /* THIS ADDS THE SPACE ON LEFT AND RIGHT */
+    padding: 0 50px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,13 +219,13 @@ transition: opacity 0.3s ease, visibility 1.0s ease;
 .logo-group {
     display: flex;
     align-items: center;
-    gap: 16px; /* Space between logo and text */
+    gap: 16px;
     margin-right: auto;
 }
 
 .logo-box {
     background-color: #00d1ff;
-    width: 52px;             /* Match the larger size in Photo 2 */
+    width: 52px;  
     height: 52px;
     border-radius: 14px;
     display: flex;
@@ -263,8 +249,7 @@ transition: opacity 0.3s ease, visibility 1.0s ease;
 .nav-icons-group {
     display: flex;
     align-items: center;
-    gap: 40px; /* Extra space between search, user, and cart */
-    /* This ensures it stays anchored right */
+    gap: 40px;
     margin-left: auto;
 }
 
