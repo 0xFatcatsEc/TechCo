@@ -20,39 +20,31 @@
           <!-- ================= NAVIGATION BAR ================= -->
           <nav id="main-navbar">
               <div class="nav-content-wrapper">
-                <!-- Logo Section -->
                   <div class="logo-group">
                     <div class="logo-box">
                       <span class="logo-letter">T</span>
                     </div>
                     <span class="web-name">TechXCo</span>
                   </div>
-                  <!-- Center Navigation Menu -->
                   <div class="nav-menu-center">
                     <div class="hidden lg:flex items-center gap-10">
-                      <!-- Main Navigation Links -->
                       <a href="index.html" class="text-gray-400 text-[15px] font-medium hover:text-cyan-500 transition-colors">Home</a>
                       <a href="PCs-GAMING.html" class="text-gray-400 text-[15px] font-medium hover:text-cyan-500 transition-colors">Gaming PCs</a>
-                          <!-- Categories Dropdown -->
                           <div class="dropdown">
                             <a href="#" class="text-gray-400 text-[15px] font-medium hover:text-cyan-500 transition-colors">Categories <span class="arrow">▼</span></a>
                             <ul class="dropdown-content">
-                              <!-- Desktop Category -->
                               <li>Desktop (Pre-Built PCs)
                                 <ul class="sub-menu">
                                   <li><b>Desktop (Pre-Built PCs)</b></li>
-                                    <!-- Desktop Options -->
                                   <li><button class="nav-categories" onclick="window.location.href='Desktop(Student).html'"> Student (Set-Up)</button></li>
                                   <li><button class="nav-categories" onclick="window.location.href='Desktop(Gaming_editng).html'">Gaming & Editing (Set-Up)</button></li>
                                   <li><button class="nav-categories" onclick="window.location.href='Desktop(Developer).html'">Developer (Set-Up)</button></li>
                                   <li><button class="nav-categories" onclick="window.location.href='Desktop(Office).html'">Office (Set-Up)</button></li>
                                 </ul>
                               </li>
-                              <!-- Laptop Category -->
                               <li>Laptop
                                 <ul class="sub-menu">
                                   <li><b>Laptop</b></li>
-                                    <!-- Laptop Options -->
                                   <li><button class="nav-categories" onclick="window.location.href='Laptop(Student).html'"> Student Laptop</button></li>
                                   <li><button class="nav-categories" onclick="window.location.href='Laptop(Gaming).html'">Gaming Laptop</button></li>
                                   <li><button class="nav-categories" onclick="window.location.href='Laptop(Editing).html'">Editing Laptop</button></li>
@@ -62,26 +54,21 @@
                               </li>
                             </ul>
                           </div>
-                      <!-- Other Navigation Links -->
                       <a href="#" class="text-gray-400 text-[15px] font-medium hover:text-cyan-500 transition-colors">Components</a>
                       <a href="#" class="text-gray-400 text-[15px] font-medium hover:text-cyan-500 transition-colors">Deals</a>
                       <a href="#" class="text-gray-400 text-[15px] font-medium hover:text-cyan-500 transition-colors">Support</a>
                     </div>
                   </div>
-                <!-- Navigation Icons (Search, Account, Cart) -->
                 <div class="nav-icons-group">
-                    <!-- Search Icon -->
                     <button class="icon-btn">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                             <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
-                    <!-- User Account Icon -->
                     <button class="icon-btn">
                       <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
                     </button>
-                    <!-- Shopping Cart Icon -->
-                    <button class="icon-btn">
+                    <button id="icon-btn" class="bg-cyan-500/10! p-2! border border-cyan-500/40 rounded-lg hover:border-cyan-500/70 hover:bg-cyan-500/20! transition-colors duration-200 ease-in-out">
                       <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                     </button>
                 </div>
@@ -89,7 +76,7 @@
           </nav>
           <!-- ================= HERO SECTION ================= -->
           <section id="hero-content" class="flex px-5! pt-21.25! pb-25.5! flex-wrap items-center">
-              <div id="hero-text">
+              <div id="hero-text" class="mt-22.5!">
                 <div class="badge">
                   <span class="pulse"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg>
@@ -163,7 +150,10 @@
                 </p>
               </header>
               <div id="top-pick-item" class="flex w-full gap-5! flex-wrap justify-center mt-20!">
-                <div class="w-87.5 bg-[#101f35] h-140 rounded-2xl shadow-lg overflow-hidden p-4 flex flex-col items-center border border-transparent transition-all  duration-500 ease-in-out hover:border-cyan-300 hover:shadow-[0_0_28px_rgba(6,182,212,0.55)] hover:scale-101 transform">
+                <div class="w-87.5 bg-[#101f35] h-140 rounded-2xl shadow-lg overflow-hidden p-4 flex flex-col items-center border border-transparent transition-all  duration-500 ease-in-out hover:border-cyan-300 hover:shadow-[0_0_28px_rgba(6,182,212,0.55)] hover:scale-101 transform relative">
+                  <div id="best-seller" class="absolute bg-cyan-500 px-2.5! py-1! rounded-full top-4 left-4 flex items-center gap-1">
+                    <p class="text-black text-[14px] font-medium">Best Seller</p>
+                  </div>
                   <img src="../assets/laptop/rog-strix.png" alt="gaming pc" class="w-full h-auto object-contain">
                   <div id="first-card" class="w-full px-4! py-6!">
                     <h1 class="w-full text-cyan-500 text-left font-light">
@@ -178,13 +168,16 @@
                       <button class="bg-cyan-500 px-6! py-2! rounded-2xl">
                         View Product
                       </button>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-3!">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-3! hover:text-cyan-500 transition-colors duration-200 ease-in-out">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                       </svg>
                     </div>
                   </div>
                 </div>
-                <div class="w-87.5 bg-[#101f35] h-140 rounded-2xl shadow-lg overflow-hidden p-4 flex flex-col items-center border border-transparent transition-all  duration-500 ease-in-out hover:border-cyan-300 hover:shadow-[0_0_28px_rgba(6,182,212,0.55)] hover:scale-101 transform">
+                <div class="w-87.5 bg-[#101f35] h-140 rounded-2xl shadow-lg overflow-hidden p-4 flex flex-col items-center border border-transparent transition-all  duration-500 ease-in-out hover:border-cyan-300 hover:shadow-[0_0_28px_rgba(6,182,212,0.55)] hover:scale-101 transform relative">
+                  <div id="best-seller" class="absolute bg-cyan-500 px-2.5! py-1! rounded-full top-4 left-4 flex items-center gap-1">
+                    <p class="text-black text-[14px] font-medium">New</p>
+                  </div>
                   <img src="../assets/laptop/lenovo-loq.png" alt="gaming pc" class="w-full h-87.5 object-fit">
                   <div id="first-card" class="w-full px-4! py-6!">
                     <h1 class="w-full text-cyan-500 text-left font-light">
@@ -199,14 +192,14 @@
                       <button class="bg-cyan-500 px-6! py-2! rounded-2xl">
                         View Product
                       </button>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-3!">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-3! hover:text-cyan-500 transition-colors duration-200 ease-in-out">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                       </svg>
                     </div>
                   </div>
                 </div>
                 <div class="w-87.5 bg-[#101f35] h-140 rounded-2xl shadow-lg overflow-hidden p-4 flex flex-col items-center border border-transparent transition-all  duration-500 ease-in-out hover:border-cyan-300 hover:shadow-[0_0_28px_rgba(6,182,212,0.55)] hover:scale-101 transform">
-                  <img src="../assets/laptop/msi.png" alt="gaming pc" class="w-full h-[350px] object-cover">
+                  <img src="../assets/laptop/msi.png" alt="gaming pc" class="w-full h-87.5 object-cover">
                   <div id="first-card" class="w-full px-4! py-6!">
                     <h1 class="w-full text-cyan-500 text-left font-light">
                     Gaming
@@ -220,14 +213,17 @@
                       <button class="bg-cyan-500 px-6! py-2! rounded-2xl">
                         View Product
                       </button>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-3!">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-3! hover:text-cyan-500 transition-colors duration-200 ease-in-out">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                       </svg>
                     </div>
                   </div>
                 </div>
-                <div class="w-87.5 bg-[#101f35] h-140 rounded-2xl shadow-lg overflow-hidden p-4 flex flex-col items-center border border-transparent transition-all  duration-500 ease-in-out hover:border-cyan-300 hover:shadow-[0_0_28px_rgba(6,182,212,0.55)] hover:scale-101 transform">
-                  <img src="../assets/laptop/hp-victus-removebg-preview (2).png" alt="gaming pc" class="w-full h-[350px] object-cover">
+                <div class="w-87.5 bg-[#101f35] h-140 rounded-2xl shadow-lg overflow-hidden p-4 flex flex-col items-center border border-transparent transition-all  duration-500 ease-in-out hover:border-cyan-300 hover:shadow-[0_0_28px_rgba(6,182,212,0.55)] hover:scale-101 transform relative">
+                  <div id="best-seller" class="absolute bg-cyan-500 px-2.5! py-1! rounded-full top-4 left-4 flex items-center gap-1">
+                    <p class="text-black text-[14px] font-medium">Premium</p>
+                  </div>
+                  <img src="../assets/laptop/hp-victus-removebg-preview (2).png" alt="gaming pc" class="w-full h-87.5 object-cover">
                   <div id="first-card" class="w-full px-4! py-6!">
                     <h1 class="w-full text-cyan-500 text-left font-light">
                     Gaming
@@ -241,7 +237,7 @@
                       <button class="bg-cyan-500 px-6! py-2! rounded-2xl">
                         View Product
                       </button>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-3!">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-3! hover:text-cyan-500 transition-colors duration-200 ease-in-out">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                       </svg>
                     </div>
@@ -257,7 +253,8 @@
               </div>
             </div>
           </section>
-          <section id="shop-category" class="w-full h-auto px-6! pt-24! pb-9">
+          <!-- SHOP CATEGORY -->
+          <section id="shop-category" class="w-full h-auto px-6! pt-24! pb-15!">
             <div id="category-container" class="w-full h-auto">
               <div id="category-content" class="">
                 <header>
@@ -268,13 +265,57 @@
                     Find exactly what you need from our extensive collection
                   </p>
                 </header>
-                <div id="category-item-container">
-                  <div id=""></div>
-                  <div id=""></div>
-                  <div id=""></div>
-                  <div id=""></div>
-                  <div id=""></div>
-                  <div id=""></div>
+                <div id="category-item-container" class="">
+                  <div id="category-content" class="flex w-full h-auto items-center justify-center mt-20! gap-3 flex-wrap">
+                    <div id="processor-category" class="w-55 h-40.5 bg-[#0a1628] flex flex-col items-center gap-2 py-6! text-center rounded-2xl border border-gray-700 hover:border-cyan-500/70 transition-colors duration-200 ease-in-out">
+                      <span class="bg-cyan-500/70 px-2! py-2.5! rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+                        </svg>
+                      </span>
+                      <p id="processor" class="">Processors</p>
+                      <p id="processor_item" class="text-[13px]">0 items</p>
+                    </div>
+                    <div id="gpu-category" class="w-55 h-40.5 bg-[#0a1628] flex flex-col items-center gap-2 py-6! text-center rounded-2xl border border-gray-700 hover:border-cyan-500/70 transition-colors duration-200 ease-in-out">
+                      <span class="bg-cyan-500/70 px-2! py-2.5! rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+                        </svg>
+                      </span>
+                      <p id="gpu" class="w-full">Graphics Cards</p>
+                      <p id="gpu_item" class="text-[13px] text-[#d1d1d1c0]">0 items</p>
+                    </div>
+                    <div id="storage-category" class="w-55 h-40.5 bg-[#0a1628] flex flex-col items-center gap-2 py-6! text-center rounded-2xl border border-gray-700 hover:border-cyan-500/70 transition-colors duration-200 ease-in-out">
+                      <span class="bg-cyan-500/70 px-2! py-2.5! rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 17.25v-.228a4.5 4.5 0 0 0-.12-1.03l-2.268-9.64a3.375 3.375 0 0 0-3.285-2.602H7.923a3.375 3.375 0 0 0-3.285 2.602l-2.268 9.64a4.5 4.5 0 0 0-.12 1.03v.228m19.5 0a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3m19.5 0a3 3 0 0 0-3-3H5.25a3 3 0 0 0-3 3m16.5 0h.008v.008h-.008v-.008Zm-3 0h.008v.008h-.008v-.008Z" />
+                        </svg>
+                      </span>
+                      <p id="storage">Storage</p>
+                      <p id="storage_item" class="text-[13px] text-[#d1d1d1c0]">0 items</p>
+                    </div>
+                    <div id="peripheral-category" class="w-55 h-40.5 bg-[#0a1628] flex flex-col items-center gap-2 py-6! text-center rounded-2xl border border-gray-700 hover:border-cyan-500/70 transition-colors duration-200 ease-in-out">
+                      <span class="text-[31px] bg-cyan-500/70 px-2! py-1.5! rounded-lg">
+                        <i class="fa-regular fa-headphones"></i>
+                      </span>
+                      <p id="peripheral">Peripherals</p>
+                      <p id="peripheral_item" class="text-[13px] text-[#d1d1d1c0]">0 items</p>
+                    </div>
+                    <div id="keyboard-category" class="w-55 h-40.5 bg-[#0a1628] flex flex-col items-center gap-2 py-6! text-center rounded-2xl border border-gray-700 hover:border-cyan-500/70 transition-colors duration-200 ease-in-out">
+                      <span class="text-[31px] bg-cyan-500/70 px-2! py-1.5! rounded-lg">
+                        <i class="fa-regular fa-keyboard"></i>
+                      </span>
+                      <p id="keyboard">Keyboards</p>
+                      <p id="keyboard_item" class="text-[13px] text-[#d1d1d1c0]">0 items</p>
+                    </div>
+                    <div id="mouse-category" class="w-55 h-40.5 bg-[#0a1628] flex flex-col items-center gap-2 py-6! text-center rounded-2xl border border-gray-700 hover:border-cyan-500/70 transition-colors duration-200 ease-in-out">
+                      <span class="text-[31px] bg-cyan-500/70 px-2! py-1.5! rounded-lg">
+                        <i class="fa-solid fa-computer-mouse"></i>
+                      </span>
+                      <p id="mouse">Mouse</p>
+                      <p id="mouse_item" class="text-[13px] text-[#d1d1d1c0] ">0 items</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
