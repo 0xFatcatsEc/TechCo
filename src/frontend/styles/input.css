@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "../**/*.html";
+@source "../**/*.js";
 
 @theme {
   /* 1. Changed position from 25% to 32% to move it away from the edge.
