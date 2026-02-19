@@ -1,6 +1,5 @@
 // ===== TECHXCO AUTH & CART SHARED UTILITY =====
-
-const API_BASE = 'http://localhost:8000/api';
+// API_BASE is set in config.js (loaded before this file)
 
 // --- AUTH STATE ---
 function isLoggedIn() {
