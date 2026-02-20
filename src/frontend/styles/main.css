@@ -324,7 +324,6 @@ margin-left: auto;
 .hero-description {
     color: #9ca3af;
     font-size: 1.125rem;
-    max-width: 480px;
     line-height: 1.6;
     margin-bottom: 40px;
 }
@@ -345,8 +344,7 @@ margin-left: auto;
     border: none;
     cursor: pointer;
     flex: 0 0 auto;
-    min-width: 200px;
-    padding: 16px 0;
+    padding: 16px 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     will-change: transform;
 }
@@ -370,30 +368,27 @@ margin-left: auto;
     font-size: 17px;
     cursor: pointer;
     flex: 0 0 auto;
-    min-width: 200px;
-    padding: 16px 0;
-    /* 1. Add transition to the base state */
+    padding: 16px 30px;
     transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-    /* 2. Scale up slightly on hover */
-    /* 3. Change border and text color on hover */
     border-color: #22d3ee;
     color: #22d3ee;
 }
 
 .hero-stats {
-display: flex; gap: 48px;
+    display: flex; 
+    gap: 48px;
 }
 .stat-num { 
-display: block; 
-font-size: 1.875rem;
-font-weight: bold;
-color: var(--color-cyan-500); 
+    display: block; 
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--color-cyan-500); 
 }
 .stat-label {
-color: #6b7280; font-size: 0.75rem; text-transform: uppercase; 
+    color: #6b7280; font-size: 0.75rem; text-transform: uppercase; 
 }
 
 /* Visual Container Styling */
@@ -404,12 +399,13 @@ color: #6b7280; font-size: 0.75rem; text-transform: uppercase;
     min-width: 0;
     padding-right: 200px;
     margin-top: 90px;
+    height: auto;
 }
 
 .glass-card {
     position: relative;
     width: 700px;
-    height: 580px;
+    height: auto;
     background: rgba(10, 34, 40, 0.8);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);

@@ -1795,3 +1795,95 @@
 .cart-continue-btn:hover {
     color: #e2e8f0;
 }
+
+/* Responsive */
+
+@media (max-width: 1300px) {
+    #hero-text {
+        padding-left: 70px;
+    }
+
+    .hero-visual {
+        padding-right: 50px;
+    }
+
+    .hero-stats {
+        display: flex; 
+        gap: 48px;
+}
+}
+
+@media (max-width: 1000px) {
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    #btn-primary {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .btn-secondary {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .hero-stats {
+        display: flex; 
+        gap: 38px;
+}
+}
+
+@media (max-width: 780px) {
+    #hero-text {
+        padding-left: 0;
+    }
+
+    .hero-visual {
+        padding-right: 0px;
+    }
+
+    .hero-stats {
+        display: flex; 
+        gap: 28px;
+    }
+
+    .stat-num { 
+        display: block; 
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--color-cyan-500); 
+    }
+}
+
+@media (max-width: 600px) {
+    #hero-text {
+        text-align: center;
+    }
+
+    #btn-primary {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .btn-secondary {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .hero-stats {
+        display: flex; 
+        gap: 18px;
+        justify-content: center;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    #hero-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
