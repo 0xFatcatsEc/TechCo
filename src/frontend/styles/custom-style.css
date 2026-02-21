@@ -1856,6 +1856,36 @@
     }
 }
 
+#mobile-menu a, #mobile-menu button:not(#navbar-close):not(#navbar-burger) {
+    padding-left: 1.5rem !important;
+    }
+    
+@media (max-width: 1023px) {
+    #mobile-menu {
+        left: auto;
+        right: 0;
+        width: 85vw;
+        max-width: 370px;
+        height: 100vh;
+        min-height: 100vh;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        align-items: flex-start;
+        padding-left: 0;
+        background: linear-gradient(135deg, #101f35 80%, #1e293b 100%);
+        box-shadow: -8px 0 32px 0 rgba(6,182,212,0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: auto;
+    }
+
+    #mobile-menu .menu-section {
+        width: 100%;
+            padding: 0 2rem 0 1.5rem;
+    }
+}
+
 @media (max-width: 600px) {
     #hero-text {
         text-align: center;
